@@ -1,0 +1,173 @@
+
+  
+    
+
+body {
+    height: 400px;
+    
+  background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    box-sizing: border-box;
+}
+.contenedor{
+  width: 100%;
+  padding: 15px;
+}
+.formulario{
+  background:rgb(4, 27, 53);
+  margin-top: 200px;
+  padding: 5px;
+  nav-down: 40px;
+  border-top-left-radius: 1.25em;
+  border-top-right-radius: 1.25em;
+}
+h1{
+  
+  text-align: center;
+  color:rgb(255, 255, 255);
+  font-size: 40px;
+  padding: 15px 20px;
+  
+  
+}
+input[type="text"],
+input[type="password"]{
+  font: size 20px;
+  width: 80%;
+  padding: 10px;
+  border: none;
+}
+.input-contenedor{
+  margin-bottom:14px;
+ 
+}
+.icon{
+  min-width: 40px;
+  text-align:center;
+  color:rgb(255, 255, 255);
+  font-size: 18;
+
+}
+.button{
+  border: none;
+  width: 100%;
+  color:black;
+  font: 200px;
+  background:rgb(130, 168, 226) ;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover{
+  background:wheat;
+}
+p{
+  text-align: center;
+
+}
+.link{
+  text-decoration: none;
+  color: rgb(246, 248, 250);
+  font-weight: 600;
+
+}
+.link:hover{
+  color: rgb(16, 79, 82);
+}
+@media(min-width:768px)
+{
+  .formulario{
+    margin:auto;
+    width: 500px;
+
+  }
+}
+label{
+  color: var(--colorTextos);
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.5s ease all;
+  pointer-events: none;
+}
+input{
+  background: none;
+  color: #c6c6c6;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid ;
+}
+
+
+
+input:focus{ 
+    outline: none;
+    color: #5e5d5d;
+}
+
+
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #475a69;
+}
+
+.barra{
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.barra::before{
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: 0;
+  position: absolute;
+  background: linear-gradient(to right, #eceaf1, #4568DC);
+  transition: width;
+  left: 0;
+}
+
+input:focus~.barra::before{
+  width: 100%;
+}
+.warnings{
+  width: 200px;
+  text-align: center;
+  margin: auto;
+  color: #B06AB3;
+  padding-top: 20px;
+}
+h3{
+  color: beige;
+  font-size: 18;
+}
+link{
+  font-size: 12;
+}
+h4{
+  font-size: 18;
+}
+.alertSI{
+  background:rgb(45, 212, 45);
+  color: #eceaf1;
+  font-size: 18;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+.alertNO{
+  background:rgb(240, 27, 27);
+  color: #eceaf1;
+  font-size: 18;
+  text-align: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+}

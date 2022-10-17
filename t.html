@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="estilos.css">
+<link href="estilazoscss.css" rel="stylesheet" type="text/css" />
+<script src="https://kit.fontawesome.com/cd544b2cdc.js" crossorigin="anonymous"></script>
+<link href="estilazoscss.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav>
+        
+        </label>
+        <a href="index.html" class="enlace">
+            <img src="Imagen2.png" alt="" class="logo">
+        </a>
+        <ul>
+            <li><a href="index.html" class="Active">Inicio</a></li>
+            <li><a href="producto.html"> Productos</a></li>
+            <li> <a href="t.html">Registro</a></li>
+            <li> <a href="iniciarsecion.html">Iniciar sesion</a></li>
+            
+
+        </ul>
+        <section class="tienda">
+
+            <div>
+              
+
+            </div>
+        </section>
+
+    </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<body>
+
+
+    <div class="formulario">
+        
+        
+    <form id="form1" class="form-signin">
+      
+      <h1 class="h3 mb-3 font-weight-normal text-center">Registro</h1>
+      <i class="fa-solid fa-user icon"></i>
+      <label for="" class="sr-only">Nombre</label>
+      <input id="user" type="text" class="form-control" placeholder="Nombre" autofocus><span class="barra"></span>
+      <i class="fa-solid fa-user icon"></i>
+      <label for="" class="sr-only">Apellido</label>
+      <input id="user" type="text" class="form-control" placeholder="Apellido" autofocus><span class="barra"></span>
+      <i class="fa-solid fa-envelope icon"></i>
+      <label for="" class="sr-only">Correo</label>
+      <input id="user" type="text" class="form-control" placeholder="Correo" autofocus><span class="barra"></span>
+      <i class="fa-solid fa-key icon"></i>
+      <label for="" class="sr-only">Contraseña</label>
+      <input id="pass"  type="password" class="form-control" placeholder="Contraseña"><span class="barra"></span>
+      <i class="fa-solid fa-key icon"></i>
+      <label for="" class="sr-only">Confirme su Contraseña</label>
+      <input id="user" type="password" class="form-control" placeholder="Repita su Contraseña" autofocus><span class="barra"></span>
+      <div class="checkbox mb-3">
+       
+      </div>
+      <button id="btnLogin" class="button" type="submit"><h4>Registrar</h4></button>
+    
+    <div id="alertSI" class="alertSI" role="alert">Registrado</div>
+    <div id="alertNO" class="alertNO" role="alert">Complete los datos</div>
+    </form>
+        
+    </div>
+          
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+          
+    
+        <script>
+       
+      
+    
+     $(document).ready(function() {        
+         $("#alertSI").hide();
+         $("#alertNO").hide();
+        $("#form1").submit(function(e){
+            e.preventDefault();    
+            user = $.trim($("#user").val());
+            pass = $.trim($("#pass").val());
+            if(user.length>0 && pass.length>0){           
+                $("#alertSI").fadeTo(2000, 500).slideUp(500, function() {
+                  $("#alertSI").slideUp(500);
+                });        
+            }else{
+                $("#alertNO").fadeTo(2000, 500).slideUp(500, function() {
+                  $("#alertNO").slideUp(500);
+                });
+            }
+            });   
+    });
+         </script>  
+          
+      </body>
+    </html>

@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration:0;
+    list-style:none;
+    box-sizing: border-box;
+}
+body{
+    height: 400px;
+    background:rgba(0, 0, 0, 0.959);
+    background-size: cover;
+      background-repeat:no-repeat;
+      background-position: center center;
+      box-sizing: border-box;
+}
+
+nav{
+    background:#99A3A4;
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position:absolute;
+    padding: 20px 50px;
+}
+.logo{
+   font-size: 100;
+  height: 80px;
+  line-height:20px;
+  margin: 2px 5px;
+  text-transform: uppercase;
+  margin-right: 20px;
+  display: block;
+  transform: translate(-10%, -35%);
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height:20px;
+    margin: 2px 5px;
+
+}
+nav ul li a{
+    font-weight: bold;
+    background-color: rgb(12, 12, 31);;
+
+    color: #ffffff;
+    font-size:  15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+
+}
+li a.active, li a:hover{
+    background:rgba(12, 12, 31, 0.075);
+    transition: 0.5s;
+
+}
+.checkbtn{
+    font-size: 30px;
+     line-height: 80px;
+    margin-right: 80px;
+    
+
+}
+#check{
+    display: none;
+}
+
+@media(max-widht: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav u li a{
+        font-size: 16px;
+    }
+
+}
+@media(max-widht:858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: gray;
+        top:80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+li a:hover, li a.active{
+    background: none;
+    color: red;
+}
+#check:checked ¬ ul{
+    left: 0;
+}
+}
+
+  .form_cliente{
+       border: 1px solid blue;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60%;
+    background: lightcoral;
+    padding: 20px 50px;
+  
+ transform: translate(30%, -55%);
+  
+  
+  }
+  .form_inicio{
+      border: 1px solid blue;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 60%;
+    background: lightcoral;
+    padding: 20px 50px;
+    transform: translate(110%, -70%);
+  }
+ 
+  html{
+    box-sizing: border-box;
+    font-size: 60.5%;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+.img-fondo{
+background-image: url(/IMG/tienda.jpg);
+}
+img{
+    width: 100%;
+}
+.velo-negro{
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.contenedor1{
+    max-width: 65rem;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.Nuestros-productos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.274);
+    font-size: 4rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.productos{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   
+   
+}
+.producto{
+    background-color: rgba(31, 25, 54, 0.768);;
+    margin: 1rem;
+    padding: 1rem;
+}
+.producto-blanco{
+    background-color: rgb(24, 6, 65);
+    height: 20rem;
+    object-fit: contain;
+    padding: 1rem;
+}
+
+.producto-precio,
+.producto-nombre{
+    color: rgb(22, 20, 20);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.producto-precio{
+    font-size: 1rem;
+    font-weight: 25;
+}
+.producto-nombre{
+    font-size: 1rem;
+    font-weight: 25;
+}
+  .busqueda{
+    display: inline-block;
+    line-height:20px;
+    margin: 2px 5px;
+    transform: translate(30%, -55%);
+
+     
+  }
+  .enlace-footer:hover{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background:#f6fbfc;
+    
+}
+.footer{
+    text-align: center;
+}
+p{
+    background: #ffffff;
+    
+}
+h1{
+    color: #f6fbfc;
+    font-size: 20;
+}
